@@ -1,5 +1,6 @@
 // ============= Test Cases =============
-import type { Equal, Expect } from "./test-utils";
+
+import { Expect, Equal } from "../test-utils";
 
 const tuple = [1] as const;
 
