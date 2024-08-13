@@ -8,8 +8,4 @@ type cases = [
 ];
 
 // ============= Your Code Here =============
-type Pop<T extends any[]> = T extends []
-  ? []
-  : T extends [...infer R, any]
-  ? R
-  : never;
+type Pop<T extends any[]> = T extends [...infer R, any] ? R : [];
